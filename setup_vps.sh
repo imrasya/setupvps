@@ -37,9 +37,8 @@ echo "Installing Python3 and pip..."
 apt install -y python3 python3-pip
 
 # Set alias cls=clear
-echo "Setting up cls alias for all users..."
-echo "alias cls='clear'" >> /etc/bash.bashrc
-echo "alias cls='clear'" >> /etc/zsh/zshrc
+echo "Setting up cls alias..."
+echo "alias cls='clear'" >> ~/.bashrc
 
 # Apply alias changes immediately
 echo "Applying alias changes immediately..."
