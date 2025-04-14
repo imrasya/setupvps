@@ -21,6 +21,11 @@ else
     echo "SWAP file already exists"
 fi
 
+# Set swappiness to 70
+echo "Setting swappiness to 70..."
+sysctl vm.swappiness=70
+echo 'vm.swappiness=70' >> /etc/sysctl.conf
+
 # Install Node.js 20.x
 echo "Installing Node.js 20.x and npm..."
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
