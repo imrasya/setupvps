@@ -9,7 +9,7 @@ echo "Installing essential tools..."
 apt install -y curl wget git htop nano
 
 # Setup SWAP (2GB)
-echo "Setting up 2GB SWAP..."
+echo "Setting up 4GB SWAP..."
 if [ ! -f /swapfile ]; then
     fallocate -l 4G /swapfile
     chmod 600 /swapfile
@@ -22,9 +22,9 @@ else
 fi
 
 # Set swappiness to 70
-echo "Setting swappiness to 70..."
-sysctl vm.swappiness=70
-echo 'vm.swappiness=70' >> /etc/sysctl.conf
+echo "Setting swappiness to 80..."
+sysctl vm.swappiness=80
+echo 'vm.swappiness=80' >> /etc/sysctl.conf
 
 # Install Node.js 20.x
 echo "Installing Node.js 20.x and npm..."
