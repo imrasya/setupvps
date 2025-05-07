@@ -11,7 +11,7 @@ apt install -y curl wget git htop nano
 # Setup SWAP (2GB)
 echo "Setting up 2GB SWAP..."
 if [ ! -f /swapfile ]; then
-    fallocate -l 2G /swapfile
+    fallocate -l 4G /swapfile
     chmod 600 /swapfile
     mkswap /swapfile
     swapon /swapfile
