@@ -9,4 +9,4 @@ Skrip automasi untuk melakukan setup awal VPS berbasis Debian/Ubuntu secara cepa
 Jalankan perintah ini di VPS bersih Anda (sebagai root):
 
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/imrasya/setupvps/main/setup.sh](https://raw.githubusercontent.com/imrasya/setupvps/main/setup.sh) | bash
+curl -fsSL https://raw.githubusercontent.com/imrasya/setupvps/refs/heads/main/setup_vps.sh | bash
